@@ -1,0 +1,28 @@
+* {
+  font-family: 'Bodoni Modo', serif;
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.linewrapper {
+  display: flex;
+  align-items: baseline;
+}
+.middle {
+  border-bottom: 4px dotted #fff;
+  flex-grow: 1;
+  margin: 0 5px;
+}
+.ingredients {
+  color: #bbb;
+  margin-bottom: 1em;
+}
