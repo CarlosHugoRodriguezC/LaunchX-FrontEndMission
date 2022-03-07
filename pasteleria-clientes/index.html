@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>CHOCAKE | PASTELES PARA TODO MOMENTO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -451,8 +451,300 @@
       <!-- Pedido form section -->
       <section
         id="pedidos"
-        class="min-h-screen flex flex-col justify-center"
-      ></section>
+        class="min-h-screen flex flex-col justify-center bg-amber-700 py-3"
+      >
+        <div class="w-full md:w-1/2 mx-auto">
+          <h2 class="text-4xl text-white font-bold text-center">Pedidos</h2>
+          <p class="text-white font-base text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugit
+            laudantium soluta exercitationem perferendis reiciendis laboriosam
+            corrupti officia nam magni consequuntur vel tempora esse mollitia
+            accusamus repellat numquam, quo ex! Dolores illum modi doloribus
+            incidunt possimus dicta natus, quos eos labore expedita dignissimos
+            temporibus cupiditate explicabo assumenda et veniam adipisci aperiam
+            id earum repellendus? Dolores aut vero fuga cumque tempore?
+          </p>
+        </div>
+        <div class="w-full md:w-1/2 mx-auto">
+          <form class="grid grid-cols-1">
+            <!-- Nombre input text -->
+            <div class="col-span-1">
+              <label for="nombre" class="text-white text-md">Nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                class="px-2 py-1 w-full border border-orange-900 rounded-lg text-orange-900"
+              />
+            </div>
+            <!-- Apellidos input text -->
+            <div class="col-span-1">
+              <label for="apellidos" class="text-white text-md">
+                Apellidos
+              </label>
+              <input
+                type="text"
+                name="apellidos"
+                id="apellidos"
+                class="px-2 py-1 w-full border border-orange-900 rounded-lg text-orange-900"
+              />
+            </div>
+            <!-- Direccion input text -->
+            <div class="col-span-1">
+              <label for="direccion" class="text-white text-md">
+                Dirección
+              </label>
+              <input
+                type="text"
+                name="direccion"
+                id="direccion"
+                class="px-2 py-1 w-full border border-orange-900 rounded-lg text-orange-900"
+              />
+            </div>
+            <!-- Telefono input text -->
+            <div class="col-span-1">
+              <label for="telefono" class="text-white text-md">Teléfono</label>
+              <input
+                type="text"
+                name="telefono"
+                id="telefono"
+                class="px-2 py-1 w-full border border-orange-900 rounded-lg text-orange-900"
+              />
+            </div>
+            <!-- Email input text -->
+            <div class="col-span-1">
+              <label for="email" class="text-white text-md">Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="px-2 py-1 w-full border border-orange-900 rounded-lg text-orange-900"
+              />
+            </div>
+
+            <!-- Selecciona el pastel radio butons -->
+            <div class="col-span-1">
+              <label for="pastel" class="text-white text-md">Pastel</label>
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <div
+                    class="flex items-center bg-white rounded-2xl overflow-hidden relative h-32"
+                  >
+                    <label for="pastel1">
+                      <img
+                        src="assets/1.jpg"
+                        alt="pastel"
+                        class="w-full object-cover"
+                      />
+                    </label>
+                    <input
+                      type="radio"
+                      name="pastel"
+                      id="pastel1"
+                      value="pastel1"
+                      class="absolute left-5"
+                    />
+                    <span
+                      class="absolute right-5 px-3 py-1 bg-white rounded-xl"
+                    >
+                      Pastel 2
+                    </span>
+                    <span
+                      class="absolute right-5 top-1 px-3 py-1 bg-white rounded-xl"
+                    >
+                      $9.9
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="flex items-center bg-white rounded-2xl overflow-hidden relative h-32"
+                  >
+                    <label for="pastel2">
+                      <img
+                        src="assets/2.jpg"
+                        alt="pastel"
+                        class="w-full object-cover"
+                      />
+                    </label>
+                    <input
+                      type="radio"
+                      name="pastel"
+                      id="pastel2"
+                      value="pastel2"
+                      class="absolute left-5"
+                    />
+                    <span
+                      class="absolute right-5 px-3 py-1 bg-white rounded-xl"
+                    >
+                      Pastel 1
+                    </span>
+                    <span
+                      class="absolute right-5 top-1 px-3 py-1 bg-white rounded-xl"
+                    >
+                      $9.9
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Selecciona el sabor radio butons -->
+            <div class="col-span-1">
+              <label for="sabor" class="text-white text-md">Sabor</label>
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <div
+                    class="flex items-center bg-white rounded-2xl overflow-hidden relative h-32"
+                  >
+                    <label for="sabor1">
+                      <img
+                        src="assets/chocolate.jpg"
+                        alt="pastel"
+                        class="w-full object-cover"
+                      />
+                    </label>
+                    <input
+                      type="checkbox"
+                      name="sabor"
+                      id="sabor1"
+                      value="sabor1"
+                      class="absolute left-5"
+                    />
+                    <span
+                      class="absolute right-5 px-3 py-1 bg-white rounded-xl"
+                    >
+                      Chocolate
+                    </span>
+                    <span
+                      class="absolute right-5 top-1 px-3 py-1 bg-white rounded-xl"
+                    >
+                      $9.9
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="flex items-center bg-white rounded-2xl overflow-hidden relative h-32"
+                  >
+                    <label for="sabor2">
+                      <img
+                        src="assets/fruits.jpg"
+                        alt="pastel"
+                        class="w-full object-cover"
+                      />
+                    </label>
+                    <input
+                      type="checkbox"
+                      name="sabor"
+                      id="sabor2"
+                      value="sabor2"
+                      class="absolute left-5"
+                    />
+                    <span
+                      class="absolute right-5 px-3 py-1 bg-white rounded-xl"
+                    >
+                      Frutas
+                    </span>
+                    <span
+                      class="absolute right-5 top-1 px-3 py-1 bg-white rounded-xl"
+                    >
+                      $9.9
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Selecciona los extras check boxes -->
+            <div class="col-span-1">
+              <label for="extras" class="text-white text-md">Extras</label>
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <div
+                    class="flex items-center bg-white rounded-2xl overflow-hidden relative h-32"
+                  >
+                    <label for="extras1">
+                      <img
+                        src="assets/extras.jpg"
+                        alt="pastel"
+                        class="w-full object-cover"
+                      />
+                    </label>
+                    <input
+                      type="checkbox"
+                      name="extras"
+                      id="extras1"
+                      value="extras1"
+                      class="absolute left-5"
+                    />
+                    <span
+                      class="absolute right-5 px-3 py-1 bg-white rounded-xl"
+                    >
+                      M&Ms
+                    </span>
+                    <span
+                      class="absolute right-5 top-1 px-3 py-1 bg-white rounded-xl"
+                    >
+                      $9.9
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="flex items-center bg-white rounded-2xl overflow-hidden relative h-32"
+                  >
+                    <label for="extras2">
+                      <img
+                        src="assets/extras1.jpg"
+                        alt="pastel"
+                        class="w-full object-cover"
+                      />
+                    </label>
+                    <input
+                      type="checkbox"
+                      name="extras"
+                      id="extras2"
+                      value="extras2"
+                      class="absolute left-5"
+                    />
+                    <span
+                      class="absolute right-5 px-3 py-1 bg-white rounded-xl"
+                    >
+                      Helado
+                    </span>
+                    <span
+                      class="absolute right-5 top-1 px-3 py-1 bg-white rounded-xl"
+                    >
+                      $9.9
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Comentarios input text -->
+            <div class="col-span-1">
+              <label for="comentarios" class="text-white text-md">
+                Comentarios
+              </label>
+              <textarea
+                name="comentarios"
+                id="comentarios"
+                cols="30"
+                rows="10"
+                class="px-2 py-1 w-full border border-orange-900 rounded-lg text-orange-900"
+              ></textarea>
+            </div>
+            <!-- Boton de enviar -->
+            <div class="col-span-1 flex justify-end">
+              <button
+                type="submit"
+                class="bg-white text-black px-3 w-32 py-2 rounded-xl hover:bg-orange-900 hover:text-white shadow-lg font-bold transition-all duration-700 ease-in-out"
+              >
+                Pedir
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
 
       <!-- Contacto section -->
       <section
